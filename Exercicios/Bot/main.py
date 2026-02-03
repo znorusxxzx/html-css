@@ -369,4 +369,4 @@ async def on_ready():
         await tree.sync()
         print("Comandos sincronizados globalmente.")
 
-bot.run("MTQyNjA3MTI5NDQyMzYwMTE3Mg.G3PjK8.1XBB1bwwC8jGA7NCCIgfndnI8fwhsxz7jopJ4A")
+bot.run("")
