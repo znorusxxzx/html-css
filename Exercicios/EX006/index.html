@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatacao de Texto</title>
+    <style>
+        .grandao {
+         font-size: 1.5em;
+        }
+</style>
+</head>
+<body> 
+    <h1>Principais Formatacao</h1>
+    <hr>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta Frase tenis um <b>termo em negrito</b> usando a tag &lt;b&gt; (nao semantica)</p>
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag &lt;strong&gt;(semantica)</p>
+    <hr>
+    <h2>Italico / Enfase</h2>
+    <p>Nesta frase temos um <i>termo em Italico</i> usando a tag &lt;I&gt;(nao semantica)</p>
+    <p>Nesta frase temos um <em>termo em enfase</em> usando a tag &lt;em&gt;</p>
+    <hr>
+    <h2>Texto Marcado</h2>
+    <p>Podemos Criar tambem <mark style="background-color: lime;">um texto marcado usando</mark> a tag mark &lt;mark&gt;</p>
+    <p>Na tag mark ela vem da cor verde mais podemos mudar isso criando um estilo dentro da tag &lt;mark style="background-color: lime;"&gt; texto marcado usando&lt;/mark&gt; Atencao essa tag nao funcionou pq usei o famoso lt & gt mais para frente vou falar de style</p>
+    <hr>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e <smal>um textopequeno</smal> nesse paragrafo</p>
+    <p>a tag big ta obsoleta entao podemos criar um &lt;style&gt</p> <span class="grande">Texto grande</span></p>
+    <hr>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto deletado</del> para indicar que ele deve ser lido, mais nao considerado usando a tag &lt;del&gt;</p>
+    <hr>
+    <h2>Texto inserido</h2>
+    <h3>Semantica</h3>
+    <p>Podemos marcar <ins>um texto inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois usando a tag &lt;ins&gt;</p>
+    <h3>Nao Semantica</h3>
+    <p>Existe tambem o texto <u>Sublinhado</u> com a tag &lt;u&gt; (nao semantica)</p>
+    <hr>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do ripo x<sup>20</sup>+3 usando a tag &lt;sup&gt;</p>
+    <h2>Texto sub escrito</h2>
+    <p>Para inserir coisas tipo H<sub>2</sub>O usando a tag &lt;sub&gt;</p>
+    <p>Podemos diser que &lt;sup&gt; e encima e &lt;sub&gt; e em baixo</p>
+    <h2>style</h2>
+    <p>nao abrendi style mais sei que da para por style dentro da tag ou dentro da cabeca </p>
+    <h3>O que muda?</h3>
+    dentro da tag somante a tag ficara da cor Ex: <mark style=" background-color: purple;">OI</mark>
+    ele ficou roxa mais se eu criar mais uma tag com &lt;mark&gt; ficara normal da cor que e Que ver <mark style="background-color: limegreen;">Ola denovo</mark> viu mais se criarmos em head ou na cabeca todas as tag &lt;mark&gt; ficara da cor ou estilo que eu coloquei
+    <h2>span class=</h2>
+    <p>A tag <span> é como uma caixinha invisível que você coloca em volta de parte do texto, quando quer mudar o estilo (como cor, tamanho, etc.) sem começar uma nova linha.</p>
+
+    <p>Já o class="..." serve para dar um nome a essa caixinha. Com esse nome, você pode dizer no CSS: “todos os elementos com essa classe devem ficar vermelhos”, por exemplo.</p>
+    💬 Imaginando na prática:
+<p>Você quer destacar uma palavra no meio de uma frase:</p>
+
+
+<p>Esse é um &lt;span&gt; class="importante">aviso&lt;/span&gt; muito sério.</p>
+E no CSS, você define o estilo da "caixinha" com o nome importante:
+
+<p>se isso tiver na cabeca usando a tag &lt;span&gt; class="importante">aviso&lt;/span&gt; ficara no estilo que colocamos da cor red e na font bold </p>
+&lt;style&gt;
+.importante {
+  color: red;
+  font-weight: bold;
+}
+&lt;/style&gt;
+<p>🔍 Resultado: só a palavra “aviso” vai ficar vermelha e em negrito, sem mexer no resto do texto.</p>
+</body>
+</html>

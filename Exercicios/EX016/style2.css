@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: purple;
+    --cor-secundaria: #7c017c;
+    --texto-claro: #fff;
+    --texto-escuro: #333;
+    --destaque-inverso: gold;
+}
+
+/* Layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #f5f5f5, #ece9f4);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+main {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px rgba(124, 1, 124, 0.3);
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    transition: transform 0.2s ease;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    background-color: var(--cor-principal);
+    padding: 15px;
+    color: var(--texto-claro);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+h1:hover {
+    color: var(--destaque-inverso);
+    background-color: var(--cor-secundaria);
+}
+
+h2 {
+    color: var(--cor-principal);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+h2:hover{
+    color: var(--destaque-inverso);
+    background-color: var(--cor-secundaria);
+    transition: 0.5s;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Texto */
+p {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+button{
+    color:  black;
+    border: 0.25em;
+    padding: 1em 3em;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: purple;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 1em 0.25em color black;
+}

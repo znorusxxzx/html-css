@@ -1,0 +1,7 @@
+h1{
+    border: 10px solid black;
+    padding: 10px;
+    border-image-source: url('descarregar.webp');
+    border-image-slice: 58;
+    border-image-repeat: stretch;
+}
